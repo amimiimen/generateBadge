@@ -1,0 +1,167 @@
+$dark-blue: #000033;
+
+.App {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    height: 75px;
+    width: calc(100% - 75px);
+    margin-left: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #000;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  aside {
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      display: flex;
+     
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      transform: rotate(-90deg);
+      white-space: nowrap;
+    }
+  }
+
+  .content_badge {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .descriptions {
+      width: 100%;
+
+      .item {
+        align-items: center;
+
+        label {
+          width: 40%;
+          text-align: right;
+        }
+
+        p {
+          width: 60%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+
+  .field {
+    width: 100%;
+    margin-bottom: 10px;
+
+    input[type="text"] {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+
+    input[type="checkbox"]+label {
+      cursor: pointer;
+    }
+  }
+
+  .buttons {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .add-btn {
+
+    margin-bottom: 10px;
+
+    .add-ic {
+      mask-image: url('/icons/add.png');
+      background: $dark-blue;
+      margin-right: 20px;
+    }
+  }
+
+  .upload-btn {
+    cursor: pointer;
+    background-color: #ddd;
+
+    .upload-ic {
+      mask-image: url('/icons/upload.png');
+      background: $dark-blue;
+      margin-right: 20px;
+    }
+  }
+
+  .export-btn {
+    margin-top: 50px;
+
+    .export-ic {
+      mask-image: url('/icons/export.png');
+      background: $dark-blue;
+      margin-right: 20px;
+    }
+  }
+}
+
+.h_flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
