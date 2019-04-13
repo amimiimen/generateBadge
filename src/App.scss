@@ -8,8 +8,10 @@ $dark-blue: #000033;
 
 .content {
   width: 350px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
+  background: #fff;
 
   .header {
     height: 75px;
