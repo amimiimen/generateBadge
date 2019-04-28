@@ -219,7 +219,7 @@ class App extends Component {
               </label>
               <input type="file" id="upload-img" onChange={this.handleChangeFile('file')} hidden />
             </div>
-            <div className="field">
+            <div className="field b_40">
               <label>Image Radius</label>
               <InputRange
                 maxValue={50}
