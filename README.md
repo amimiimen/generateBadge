@@ -1,5 +1,5 @@
 generate-badge is a react project allows you to generate personal badges quickly, it also allows you to change the default css through easy access to the project's css file, and finally export the badge
-![Demo](https://gitlab.com/AmimiImen/custom-badges/-/blob/master/public/demo/demo-badge.png)
+![](demo/demo-badge.png)
 ## Available Scripts
 
 In the project directory, you can run:
